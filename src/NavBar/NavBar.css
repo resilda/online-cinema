@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    color: #333;
+  }
+
+/* NavBar.js */
+
+.wrapper {
+    background-color: rgba(13, 41, 25, 0.945);
+    margin-bottom: 2.5%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px 25px;
+}
+
+.logo {
+    margin-left: 15px;
+    margin-bottom: 28px;
+    display: block;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-emphasis: none;
+}
+
+.title {
+    color: #cbe7df;
+    font-family: 'Freckle Face', cursive;
+    font-size: 45px;
+}
+
+.button {
+    color: #cbe7df;
+    background-color: rgb(88, 194, 159);
+    height: 70px;
+    width: 120px; 
+    border-radius: 15px;
+    display:block;
+    outline: none; 
+    cursor: pointer;
+    margin: 5% 5%;
+}
+
+.button-text {
+    color: #142520;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    outline: none;
+    text-decoration: none;
+    text-emphasis: none;
+}
+
+.title:hover {
+    color: rgb(180, 211, 123);
+}
+
+.button:hover {
+    background: rgb(169, 211, 211);
+}

@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #cbe7df;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+/* Show.js and Details.js */
+
+  .h1-title {
+    font-family: 'Original Surfer', cursive;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    background-image: linear-gradient(to bottom, rgb(136, 224, 198), #7fa89c);
+    border: 1px solid black;
+    padding: 5px 10px;
+    width: 50%;
+    margin: 13px 25%;
+  }
+
+  .wrapper-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, rgb(104, 190, 164), #a3c4ba);
+    width: 50%;
+    margin: 13px 25%;
+    padding: 2% 5%;
+  }
+
+  img {
+    border: 3px solid black;
+  }
+
+  .title-component {
+    font-family: 'Original Surfer', cursive;
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    background-image: linear-gradient(to bottom, rgb(136, 224, 198), #7fa89c);
+    border: 1px solid black;
+    padding: 5px 10px;
+  }
+
+  .url-component {
+    font-size: 16px;
+    font-weight: bold;
+    color: #142520;
+    background-color: rgb(88, 194, 159);
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 10px;
+    text-decoration: none;
+    text-emphasis: none;
+    text-emphasis: none;
+    text-decoration: none;
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .main-buttons {
+    color: #142520;
+    background-color: rgb(88, 194, 159);
+    font-size: 12px;
+    font-weight: bold;
+    height: 60px;
+    width: 80px; 
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 5px 3px;
+    display:block;
+    outline: none;
+}
+
+.main-buttons:hover {
+    background: rgb(169, 211, 211);
+}
+
+.url-component:hover {
+  background: rgb(169, 211, 211);
+}
+
+.details-button {
+  text-emphasis: none;
+  text-decoration: none;
+}
+
+/* Details.js adition */
+
+.buttons-in-details-page {
+  display: flex;
+  flex-direction: row;
+  margin-top: 7px;
+}
+
+.details-summary-component {
+  font-size: 16px;
+    font-style: italic;
+    color: #142520;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-image: linear-gradient(to bottom, rgb(136, 224, 198), #7fa89c);
+    border: 1px solid black;
+    padding: 5px 10px;
+}

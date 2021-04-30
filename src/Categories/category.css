@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+/* AllCategories.js */
+
+.all-categories-title {
+    font-family: 'Original Surfer', cursive;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    background-image: linear-gradient(to bottom, rgb(136, 224, 198), #7fa89c);
+    border: 1px solid black;
+    padding: 5px 10px;
+    width: 50%;
+    margin: 13px 25%;
+}
+
+.in-categories {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    font-style: italic;
+    color: black;
+    background-image: linear-gradient(to bottom, rgb(136, 224, 198), #7fa89c);
+    border: 1px solid black;
+    padding: 5px 10px;
+    width: 50%;
+    margin: 13px 25%;
+}
+
+/* FavoriteShow.js */
+
+.favorite-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, rgb(104, 190, 164), #a3c4ba);
+    width: 50%;
+    margin: 13px 25%;
+    padding: 2% 5%;
+  }
+
+  img {
+    border: 3px solid black;
+  }
+
+  .title-component {
+    font-family: 'Original Surfer', cursive;
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    background-image: linear-gradient(to bottom, rgb(136, 224, 198), #7fa89c);
+    border: 1px solid black;
+    padding: 5px 10px;
+  }
+
+  .summary-component {
+    font-size: 16px;
+    font-style: italic;
+    color: #142520;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-image: linear-gradient(to bottom, rgb(136, 224, 198), #7fa89c);
+    border: 1px solid black;
+    padding: 5px 10px;
+    width: inherit;
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .button-2 {
+    color: #142520;
+    background-color: rgb(88, 194, 159);
+    font-size: 14px;
+    font-weight: bold;
+    height: 60px;
+    width: 80px; 
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 5px 3px;
+    display:block;
+    outline: none;
+}
+
+.button-2:hover {
+    background: rgb(169, 211, 211);
+}
+
+/* FavoriteCategory.js */
+
+.span {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    background-image: linear-gradient(to bottom, rgb(136, 224, 198), #7fa89c);
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-left: 25%;
+}

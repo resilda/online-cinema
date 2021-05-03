@@ -21,6 +21,7 @@ const Details = ({ currentTvShow }) => {
 				>
 					Go to Page
 				</a>
+
 				<Link to="/" className="url-component">
 					Go back
 				</Link>

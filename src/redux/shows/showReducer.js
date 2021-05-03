@@ -6,7 +6,8 @@ const INITIAL_STATE = {
 	error: '',
 	favoriteCategory: [],
 	currentTvShow: null,
-	addCategories: []
+	nameOfCategory: '',
+	addCategory: []
 };
 
 const showsReducer = (state = INITIAL_STATE, action) => {
@@ -55,6 +56,30 @@ const showsReducer = (state = INITIAL_STATE, action) => {
 			return {
 				...state,
 				favoriteCategory: state.favoriteCategory.filter((show) => show.id !== action.payload.id)
+			};
+		}
+		case actionTypes.GET_NEW_CATEGORY: {
+			return {
+				...state,
+				nameOfCategory: action.payload
+			};
+		}
+		case actionTypes.ADD_TO_NEW_CATEGORY: {
+			const tvShow2 = state.shows.find((show) => show.id === action.payload.id);
+			const inAddCategory = state.addCategory.find((show) => (show.id === action.payload.id ? true : false));
+			return {
+				...state,
+				addCategory: inAddCategory
+					? state.addCategory.map(
+							(show) => (show.id === action.payload.id ? { ...show, qty: show.qty } : show)
+						)
+					: [ ...state.addCategory, { ...tvShow2, qty: 1 } ]
+			};
+		}
+		case actionTypes.REMOVE_FROM_NEW_CATEGORY: {
+			return {
+				...state,
+				addCategory: state.addCategory.filter((show) => show.id !== action.payload.id)
 			};
 		}
 		case actionTypes.ADJUST_SHOW_NUMBER:

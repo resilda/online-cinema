@@ -15,8 +15,8 @@ const NavBar = () => {
 					</Link>
 				</button>
 				<button onClick={(e) => e.target.value} className="button">
-					<Link to="/add-categories" className="button-text">
-						New Category
+					<Link to="/new-categories" className="button-text">
+						Added Category
 					</Link>
 				</button>
 				<button onClick={(e) => e.target.value} className="button">

@@ -66,6 +66,36 @@ export const adjustShowNumber = (showsID, value) => {
 	};
 };
 
+//Get new category and its's name by the user
+export const getNewCategory = (name) => {
+	return {
+		type: actionTypes.GET_NEW_CATEGORY,
+		payload: {
+			nameOfCategory: name
+		}
+	};
+};
+
+//Add tv-shows to the new category created
+export const addToNewCategory = (showsID) => {
+	return {
+		type: actionTypes.ADD_TO_NEW_CATEGORY,
+		payload: {
+			id: showsID
+		}
+	};
+};
+
+//Remove tv-shows from new category created
+export const removeFromNewCategory = (showsID) => {
+	return {
+		type: actionTypes.REMOVE_FROM_NEW_CATEGORY,
+		payload: {
+			id: showsID
+		}
+	};
+};
+
 //by making use of 'thunk', it will return a function
 export const fetchShows = (showID) => {
 	return (dispatch) => {

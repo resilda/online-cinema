@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { adjustShowNumber, removeFromFavorites, loadCurrentShow } from '../redux/shows/showActions';
+import { adjustShowNumber, removeFromNewCategory, loadCurrentShow } from '../../redux/shows/showActions';
 
-const FavoriteShow = ({ showData, removeFromFavorites, loadCurrentShow }) => {
+const NewShow = ({ showData, removeFromNewCategory, loadCurrentShow }) => {
 	return (
 		<div>
 			<div className="favorite-page">
+				{' '}
 				<section>
-					{' '}
 					{showData.image === null ? (
 						<img
 							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWIufz4Th87v5jVp7hpkNUon5Hw3LI73muiq_l4QlIgt-UeMg9SuvFH7lnVWzuFdrMXY&usqp=CAU"
@@ -24,7 +24,7 @@ const FavoriteShow = ({ showData, removeFromFavorites, loadCurrentShow }) => {
 					<button onClick={() => loadCurrentShow(showData)} className="button-2">
 						<Link to={`/details/${showData.id}`}>Details</Link>
 					</button>
-					<button onClick={() => removeFromFavorites(showData.id)} className="button-2">
+					<button onClick={() => removeFromNewCategory(showData.id)} className="button-2">
 						Remove
 					</button>
 				</section>
@@ -35,10 +35,10 @@ const FavoriteShow = ({ showData, removeFromFavorites, loadCurrentShow }) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		removeFromFavorites: (id) => dispatch(removeFromFavorites(id)),
+		removeFromNewCategory: (id) => dispatch(removeFromNewCategory(id)),
 		adjustShowNumber: (id, value) => dispatch(adjustShowNumber(id, value)),
 		loadCurrentShow: (item) => dispatch(loadCurrentShow(item))
 	};
 };
 
-export default connect(null, mapDispatchToProps)(FavoriteShow);
+export default connect(null, mapDispatchToProps)(NewShow);

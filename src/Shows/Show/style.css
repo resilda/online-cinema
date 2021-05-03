@@ -7,6 +7,59 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
+/* Shows.js */
+
+  .add-category-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 2.5%;
+    background-color: rgb(13, 41, 25, 0.945)
+  }
+
+  .create-category-button {
+    color: #142520;
+    background-color: rgb(88, 194, 159);
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    width: 30px; 
+    cursor: pointer;
+    display:block;
+    outline: none;
+    margin-right: 2.7%;
+}
+
+.add-category-name {
+  color: #142520;
+  background-color: rgb(88, 194, 159);
+  font-size: 12px;
+  font-weight: bold;
+  height: 30px;
+  width: 40px; 
+  cursor: pointer;
+  display:block;
+  outline: none;
+}
+
+.create-category-button:hover {
+    background: rgb(169, 211, 211);
+}
+
+.add-category-name:hover {
+  background: rgb(169, 211, 211);
+}
+
+.label {
+  color: black;
+  background-color:rgb(88, 194, 159);
+  /* margin: 0 50%; */
+}
+
+label:focus{
+	border: 1px solid black;
+}
+
 /* Show.js and Details.js */
 
   .h1-title {

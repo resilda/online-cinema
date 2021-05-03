@@ -5,7 +5,7 @@ import Shows from './Shows/Shows';
 import Details from './Shows/Show/Details';
 import AllCategories from './Categories/AllCategories';
 import FavoriteCategory from './favoritesCategory/FavoriteCategory';
-import AddCategories from './Categories/addCategories/AddCategories';
+import NewCategrory from './Categories/newCategory/NewCategrory';
 
 const App = () => {
 	return (
@@ -17,7 +17,7 @@ const App = () => {
 					<Route path="/details/:id" component={Details} />
 					<Route path="/favorites" component={FavoriteCategory} />
 					<Route path="/all-categories" component={AllCategories} />
-					<Route path="/add-categories" component={AddCategories} />
+					<Route path="/new-categories" component={NewCategrory} />
 				</Switch>
 			</BrowserRouter>
 		</div>
